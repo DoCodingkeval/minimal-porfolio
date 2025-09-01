@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex min-h-screen w-full items-center justify-center py-10 pt-16 xl:min-h-[95vh]"
+      className="flex min-h-screen w-full items-center justify-center py-10 xl:min-h-[95vh]"
       id="hero"
     >
       <div className="grid h-full lg:grid-cols-2 xl:pt-10">
