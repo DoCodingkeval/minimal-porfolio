@@ -36,6 +36,7 @@ const FloatingDock = () => {
         >
           {navLinks.map((links) => (
             <motion.li
+              key={links.id}
               variants={liVariants}
               className="group relative list-none"
             >

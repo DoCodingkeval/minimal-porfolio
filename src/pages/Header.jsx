@@ -3,19 +3,19 @@ import { IconDownload, IconMoonStars, IconSunHigh } from '@tabler/icons-react';
 import { motion } from 'motion/react';
 
 const Header = () => {
-  const [icon, setIcon] = useState(false);
+  const [icon, setIcon] = useState('');
 
   const handleThemeChange = () => {
     const isDark = document.documentElement.classList.contains('dark');
 
     if (isDark) {
       document.documentElement.classList.remove('dark');
-      setIcon(false);
       localStorage.setItem('theme', 'light');
+      setIcon('light');
     } else {
       document.documentElement.classList.add('dark');
-      setIcon(!icon);
       localStorage.setItem('theme', 'dark');
+      setIcon('dark');
     }
   };
 
@@ -27,7 +27,7 @@ const Header = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  });
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full border-b border-neutral-200 bg-white transition-all duration-200 dark:border-zinc-800 dark:bg-[#08090a]">
@@ -46,7 +46,7 @@ const Header = () => {
             onClick={handleThemeChange}
             className="grid size-11 cursor-pointer place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800"
           >
-            {icon ? (
+            {icon === 'dark' ? (
               <IconMoonStars className="size-5" />
             ) : (
               <IconSunHigh className="size-5" />
