@@ -25,6 +25,7 @@ const Project = () => {
                   src={project.image}
                   className="rounded-xl mask-x-from-85% dark:mask-x-from-90%"
                   alt="weather app"
+                  loading="lazy"
                 />
               </Lens>
               <span className="mt-3 text-xl font-extrabold">{`0${project.id}`}</span>

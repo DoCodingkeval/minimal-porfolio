@@ -29,6 +29,7 @@ const Hero = () => {
           src="hero-vector.svg"
           className="pr-5 lg:order-1 lg:mt-10 xl:mt-0 xl:scale-110"
           alt="hero image"
+          loading="lazy"
         />
         <motion.div
           initial={{ x: -50, opacity: 0 }}

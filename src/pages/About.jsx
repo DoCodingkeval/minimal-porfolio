@@ -15,6 +15,7 @@ const About = () => {
           src="about-me.svg"
           className="sm:w-1/2 lg:w-5/6"
           alt="my image"
+          loading="lazy"
         />
         <motion.div
           initial={{ x: 50, opacity: 0 }}
