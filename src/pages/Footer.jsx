@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="w-full text-center text-sm border-t border-neutral-200 dark:border-zinc-800 max-[1024px]:pb-18">
-      <p className="lg:max-w-3xl xl:max-w-5xl mx-auto border-r border-l border-neutral-200 dark:border-zinc-800 py-8 flex flex-col justify-center md:flex-row md:justify-between px-5">
+    <footer className="w-full border-t border-neutral-200 text-center text-sm max-[1024px]:pb-18 dark:border-zinc-800">
+      <p className="mx-auto flex flex-col justify-center border-r border-l border-neutral-200 px-5 py-8 md:flex-row md:justify-between lg:max-w-3xl xl:max-w-5xl dark:border-zinc-800">
         @2025 Personal Portfolio <br />
         <span>Made by -KG </span>
       </p>

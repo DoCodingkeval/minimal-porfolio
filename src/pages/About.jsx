@@ -1,9 +1,9 @@
-import { motion } from "motion/react";
+import { motion } from 'motion/react';
 
 const About = () => {
   return (
     <section
-      className="w-full mx-auto min-h-screen flex items-center justify-center scroll-mt-10"
+      className="mx-auto flex min-h-screen w-full scroll-mt-10 items-center justify-center"
       id="about"
     >
       <div className="grid lg:grid-cols-2">
@@ -21,7 +21,7 @@ const About = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.4 }}
           viewport={{ once: true }}
-          className="flex flex-col gap-4 mt-4"
+          className="mt-4 flex flex-col gap-4"
         >
           <h1 className="text-3xl lg:text-4xl">
             About <span className="font-extrabold">Me</span>

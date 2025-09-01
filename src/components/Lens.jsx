@@ -1,6 +1,6 @@
-"use client";
-import { useRef, useState } from "react";
-import { AnimatePresence, motion } from "motion/react";
+'use client';
+import { useRef, useState } from 'react';
+import { AnimatePresence, motion } from 'motion/react';
 
 export const Lens = ({
   children,
@@ -31,7 +31,7 @@ export const Lens = ({
   return (
     <div
       ref={containerRef}
-      className="relative overflow-hidden rounded-lg z-20"
+      className="relative z-20 overflow-hidden rounded-lg"
       onMouseEnter={() => {
         setIsHovering(true);
       }}
@@ -45,7 +45,7 @@ export const Lens = ({
             initial={{ opacity: 0, scale: 0.58 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ duration: 0.3, ease: 'easeOut' }}
             className="absolute inset-0 overflow-hidden"
             style={{
               maskImage: `radial-gradient(circle ${lensSize / 2}px at ${
@@ -76,7 +76,7 @@ export const Lens = ({
                 initial={{ opacity: 0, scale: 0.58 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.8 }}
-                transition={{ duration: 0.3, ease: "easeOut" }}
+                transition={{ duration: 0.3, ease: 'easeOut' }}
                 className="absolute inset-0 overflow-hidden"
                 style={{
                   maskImage: `radial-gradient(circle ${lensSize / 2}px at ${

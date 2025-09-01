@@ -7,12 +7,12 @@ import {
   Project,
   Contact,
   Footer,
-} from "./imports/Files";
+} from './imports/Files';
 
 function App() {
   return (
     <>
-      <main className="lg:border-l lg:border-r border-[#EBEBED] dark:border-zinc-800 lg:max-w-3xl xl:max-w-5xl mx-auto px-5 overflow-hidden">
+      <main className="mx-auto overflow-hidden border-[#EBEBED] px-5 lg:max-w-3xl lg:border-r lg:border-l xl:max-w-5xl dark:border-zinc-800">
         <Header />
         <FloatingDock />
         <Hero />

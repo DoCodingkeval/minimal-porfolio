@@ -1,5 +1,5 @@
-import { navLinks } from "../constants";
-import { motion } from "motion/react";
+import { navLinks } from '../constants';
+import { motion } from 'motion/react';
 
 const FloatingDock = () => {
   const ulVariants = {
@@ -26,26 +26,26 @@ const FloatingDock = () => {
   };
 
   return (
-    <nav className="fixed bottom-4 inset-x-0 border border-neutral-300 max-w-max mx-auto p-1 rounded-full bg-white text-xs z-50 shadow dark:bg-zinc-900 dark:border-zinc-800">
+    <nav className="fixed inset-x-0 bottom-4 z-50 mx-auto max-w-max rounded-full border border-neutral-300 bg-white p-1 text-xs shadow dark:border-zinc-800 dark:bg-zinc-900">
       <div className="flex items-center justify-center">
         <motion.ul
           variants={ulVariants}
           initial="hidden"
           animate="show"
-          className="flex items-center gap-2 justify-center"
+          className="flex items-center justify-center gap-2"
         >
           {navLinks.map((links) => (
             <motion.li
               variants={liVariants}
-              className="list-none relative group"
+              className="group relative list-none"
             >
               <a
                 href={`#${links.href}`}
-                className=" hover:bg-neutral-200 hover:dark:bg-zinc-800 size-11 grid place-items-center rounded-full transition duration-300"
+                className="grid size-11 place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800"
               >
                 {links.icon}
               </a>
-              <span className="absolute -top-9 left-1/2 -translate-x-1/2 bg-zinc-700 dark:bg-neutral-200 dark:text-black text-white capitalize py-1 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition duration-500 delay-200">
+              <span className="absolute -top-9 left-1/2 -translate-x-1/2 rounded-lg bg-zinc-700 px-3 py-1 text-white capitalize opacity-0 transition delay-200 duration-500 group-hover:opacity-100 dark:bg-neutral-200 dark:text-black">
                 {links.name}
               </span>
             </motion.li>
