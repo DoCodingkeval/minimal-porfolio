@@ -74,9 +74,9 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 px-1 py-3.5 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16"
+          className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 px-1.5 py-4 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16"
         >
-          <IconPointFilled className="size-4 animate-bounce" />
+          <IconPointFilled className="animate-bounce" size={10} />
         </motion.button>
       </div>
     </section>
