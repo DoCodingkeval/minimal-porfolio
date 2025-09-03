@@ -4,7 +4,7 @@ import { skills } from '../constants';
 const Skill = () => {
   return (
     <section
-      className="h-full w-full scroll-mt-14 py-10 sm:px-10 xl:scroll-mt-20"
+      className="w-full scroll-mt-14 py-10 sm:px-10 xl:scroll-mt-20"
       id="skill"
     >
       <h1 className="mb-10 text-center text-3xl lg:text-4xl">

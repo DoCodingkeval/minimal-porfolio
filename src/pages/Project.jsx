@@ -10,7 +10,7 @@ const Project = () => {
           'radial-gradient(.5px .5px, rgba(0,0,0,.4) 1px, transparent 0)',
         backgroundSize: '16px 16px',
       }}
-      className="my-10 min-h-screen w-full scroll-mt-14 px-4 text-white xl:scroll-mt-18"
+      className="my-10 w-full scroll-mt-14 px-4 text-white xl:scroll-mt-18"
       id="project"
     >
       <div className="h-full">

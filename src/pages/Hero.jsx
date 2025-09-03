@@ -18,10 +18,10 @@ const Hero = () => {
 
   return (
     <section
-      className="flex min-h-screen w-full items-center justify-center py-10 xl:min-h-[95vh]"
+      className="flex h-full w-full items-center justify-center py-10 pt-16 lg:h-[70vh] xl:h-[94vh] xl:pt-0"
       id="hero"
     >
-      <div className="grid h-full lg:grid-cols-2 xl:pt-10">
+      <div className="grid lg:grid-cols-2 xl:pt-10">
         <motion.img
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}

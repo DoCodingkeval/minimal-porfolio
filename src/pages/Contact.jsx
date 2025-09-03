@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section
-      className="flex min-h-screen w-full scroll-mt-14 flex-col items-center justify-center py-10 xl:scroll-mt-0"
+      className="flex w-full scroll-mt-14 flex-col items-center justify-center py-10 xl:scroll-mt-0"
       id="contact"
     >
       <motion.h1
