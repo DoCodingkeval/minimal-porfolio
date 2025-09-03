@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex w-full items-center justify-center pt-30 pb-10 xl:h-[94vh] xl:pt-0"
+      className="flex w-full items-center justify-center pt-30 pb-16 xl:h-[94vh] xl:pt-0"
       id="hero"
     >
       <div className="grid lg:grid-cols-2 xl:pt-10">
