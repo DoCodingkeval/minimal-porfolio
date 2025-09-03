@@ -1,7 +1,7 @@
 import { PointerHighlight, socialLinks, Typed } from '../imports/Files';
 import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
-import { IconCodeDots, IconDots } from '@tabler/icons-react';
+import { IconPointFilled } from '@tabler/icons-react';
 
 const Hero = () => {
   const el = useRef(null);
@@ -69,10 +69,15 @@ const Hero = () => {
               </a>
             ))}
           </div>
-          <button className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 p-2 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16">
-            <span className="block animate-bounce">.</span>
-          </button>
         </motion.div>
+        <motion.button
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 px-1 py-3.5 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16"
+        >
+          <IconPointFilled className="size-4 animate-bounce" />
+        </motion.button>
       </div>
     </section>
   );
