@@ -1,6 +1,7 @@
 import { PointerHighlight, socialLinks, Typed } from '../imports/Files';
 import { useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
+import { IconCodeDots, IconDots } from '@tabler/icons-react';
 
 const Hero = () => {
   const el = useRef(null);
@@ -18,7 +19,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex w-full items-center justify-center pt-30 pb-16 xl:h-[94vh] xl:pt-0"
+      className="relative flex w-full items-center justify-center pt-30 pb-16 xl:h-[94vh] xl:pt-0"
       id="hero"
     >
       <div className="grid lg:grid-cols-2 xl:pt-10">
@@ -42,7 +43,7 @@ const Hero = () => {
               Hello, <span ref={el} className="font-semibold"></span>
             </div>
             <PointerHighlight>
-              <span className="inline-block font-extrabold">
+              <span className="inline-block font-extrabold text-shadow-2xs">
                 Frontend{' '}
                 <span className="text-stroke font-bold text-white dark:text-zinc-900">
                   Developer&nbsp;
@@ -68,6 +69,9 @@ const Hero = () => {
               </a>
             ))}
           </div>
+          <button className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 p-2 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16">
+            <span className="block animate-bounce">.</span>
+          </button>
         </motion.div>
       </div>
     </section>

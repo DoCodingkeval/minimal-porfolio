@@ -14,7 +14,7 @@ const Skill = () => {
         {skills.map((skill) => (
           <Card
             key={skill.id}
-            className="items-center border-2 border-black transition-all duration-200 hover:bg-black hover:text-white dark:border-zinc-800 dark:hover:bg-zinc-900"
+            className="items-center border-2 border-black shadow-[3px_3px_1px_#000] transition-all duration-200 hover:bg-black hover:text-white dark:border-zinc-800 dark:hover:bg-zinc-900"
           >
             {skill.icon}
             <h1 className="text-md font-bold">{skill.name}</h1>
