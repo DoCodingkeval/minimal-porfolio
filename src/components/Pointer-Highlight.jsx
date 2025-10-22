@@ -86,7 +86,7 @@ export function PointerHighlight({
           >
             <Pointer
               className={cn(
-                'h-5 w-5 text-zinc-900 dark:text-neutral-200',
+                'h-5 w-5 text-md text-zinc-900 dark:text-neutral-200',
                 pointerClassName
               )}
             />

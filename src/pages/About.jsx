@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 const About = () => {
   return (
     <section
-      className="mx-auto mt-30 flex w-full scroll-mt-20 items-center justify-center py-10"
+      className="mx-auto flex w-full scroll-mt-20 items-center justify-center py-10"
       id="about"
     >
       <div className="grid lg:grid-cols-2">
@@ -28,7 +28,7 @@ const About = () => {
             About <span className="font-extrabold">Me</span>
           </h1>
           <p className="text-gray text-sm leading-relaxed">
-            I’m a frontend developer with a strong interest in web technologies.
+            I’m a software engineer with a strong interest in web technologies.
             I enjoy turning ideas into clean, responsive, and functional
             websites. Always learning, always improving.
           </p>

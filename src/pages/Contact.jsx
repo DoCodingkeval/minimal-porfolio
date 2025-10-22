@@ -150,7 +150,7 @@ const Contact = () => {
             </span>{' '}
             for Something special
           </h1>
-          <p className="text-gray text-xs leading-relaxed xl:text-[1rem]">
+          <p className="text-gray text-xs leading-relaxed md:w-3/4 max-[376px]:pr-7 xl:text-[.9rem]">
             I seek to push the limits of creativity to create high-engaging,
             user-friendly, and memorable interactive experiences.
           </p>

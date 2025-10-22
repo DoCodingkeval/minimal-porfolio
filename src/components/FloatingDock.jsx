@@ -26,7 +26,7 @@ const FloatingDock = () => {
   };
 
   return (
-    <nav className="fixed inset-x-0 bottom-4 z-50 mx-auto max-w-max rounded-full border border-neutral-300 bg-white p-1 text-xs shadow dark:border-zinc-800 dark:bg-zinc-900">
+    <nav className="fixed inset-x-0 bottom-4 z-50 mx-auto max-w-max rounded-full border border-neutral-300 bg-white py-2 px-3 text-xs shadow dark:border-zinc-800 dark:bg-zinc-900">
       <div className="flex items-center justify-center">
         <motion.ul
           variants={ulVariants}
@@ -42,7 +42,7 @@ const FloatingDock = () => {
             >
               <a
                 href={`#${links.href}`}
-                className="grid size-11 place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800"
+                className="grid size-9 place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800"
               >
                 {links.icon}
               </a>

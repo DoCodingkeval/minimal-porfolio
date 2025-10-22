@@ -18,6 +18,10 @@ body {
   font-family: var(--font-sora);
 }
 
+img{
+    user-select: none;
+}
+
 .text-stroke {
   -webkit-text-stroke: 1px black;
 }

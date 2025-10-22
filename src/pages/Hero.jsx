@@ -19,10 +19,11 @@ const Hero = () => {
 
     return (
         <section
-            className="relative flex w-full items-center justify-center pt-30 pb-16 xl:h-[94vh] xl:pt-0"
+            className="relative w-full max-md:mt-25"
             id="hero"
         >
-            <div className="grid lg:grid-cols-2 xl:pt-10">
+            <div className='flex items-center justify-center md:py-30'>
+            <div className="grid lg:grid-cols-2">
                 <motion.img
                     initial={{ x: 50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
@@ -38,26 +39,26 @@ const Hero = () => {
                     transition={{ duration: 0.7, delay: 0.5 }}
                     className="mt-5 flex flex-col flex-wrap lg:mt-0"
                 >
-                    <div className="text-2xl leading-8 md:text-4xl md:leading-10 lg:leading-14 xl:text-5xl xl:leading-17">
+                    <div className="text-2xl leading-8 md:text-3xl md:leading-10 xl:text-5xl xl:leading-17">
                         <div className="whitespace-nowrap">
                             Hello, <span ref={el} className="font-semibold"></span>
                         </div>
                         <PointerHighlight>
                             <span className="inline-block font-extrabold text-shadow-2xs">
-                                Frontend{' '}
+                                Software {' '}
                                 <span className="text-stroke font-bold text-white dark:text-zinc-900">
-                                    Developer&nbsp;
+                                    Engineer
                                 </span>
                             </span>
                         </PointerHighlight>
                         Based in <span className="font-extrabold">India.</span>
                     </div>
-                    <p className="text-gray mt-3 text-sm lg:w-sm xl:mt-4 xl:w-full xl:text-[1rem]">
+                    <p className="text-gray mt-3 mb-4 xl:mb-6 text-xs md:text-sm leading-relaxed">
                         Passionate about technology, I specialize in Web Development and
                         Design. I focus on creating innovative solutions, growing my skills,
                         and contributing to impactful projects.
                     </p>
-                    <div className="mt-4 flex items-center gap-5 xl:mt-6">
+                    <div className="flex items-center gap-5">
                         {socialLinks.map((sociallink) => (
                             <a
                                 key={sociallink.id}
@@ -74,10 +75,11 @@ const Hero = () => {
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 px-1.5 py-4 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 xl:bottom-16"
+                    className="mx-auto mt-10 w-max rounded-2xl border-2 border-neutral-600 px-1.5 py-4 font-extrabold shadow-xl lg:absolute lg:left-1/2 lg:mt-0 lg:bottom-0"
                 >
                     <IconPointFilled className="animate-bounce" size={10} />
                 </motion.button>
+            </div>
             </div>
         </section>
     );
