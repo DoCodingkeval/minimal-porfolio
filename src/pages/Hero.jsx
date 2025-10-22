@@ -19,7 +19,7 @@ const Hero = () => {
 
     return (
         <section
-            className="relative w-full max-md:mt-25"
+            className="relative w-full max-md:pt-25"
             id="hero"
         >
             <div className='flex items-center justify-center md:py-30'>
