@@ -16,12 +16,18 @@ html {
 
 body {
   font-family: var(--font-sora);
+  line-height: 1.5;
 }
 
 img{
     user-select: none;
 }
-
+button, a{
+    font-family: inherit;
+}
+section{
+    padding: 7rem 0;
+}
 .text-stroke {
   -webkit-text-stroke: 1px black;
 }
@@ -33,4 +39,14 @@ html.dark {
 
 html.dark .text-stroke {
   -webkit-text-stroke: 1px white;
+}
+@media (max-width: 1023px){
+    section{
+        padding: 5rem 0;
+    }
+}
+@media (max-width: 480px){
+    section{
+        padding: 4rem 0;
+    }
 }

@@ -51,9 +51,9 @@ const Header = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 className="relative mx-auto flex h-16 w-full items-center justify-between border border-t-0 border-b-0 border-neutral-200 px-5 text-xs md:text-sm lg:h-20 lg:max-w-3xl xl:max-w-5xl dark:border-zinc-800"
             >
-                <a href="#" className="font-alfa text-2xl">
+                <a href="#" title='KG' className="font-alfa text-2xl font-extrabold">
                     KG
-                    <span className="font-birth ml-3 text-3xl">Keval</span>
+                    <span className="font-birth ml-3 text-3xl font-medium">Keval</span>
                 </a>
                 <div className="flex items-center gap-2">
                     <button
@@ -67,6 +67,7 @@ const Header = () => {
                         )}
                     </button>
                     <a
+                        title='My Resume'
                         href="/Keval_Gohel_Resume.pdf"
                         download="Keval_Gohel_Resume.pdf"
                         className="flex w-max items-center gap-2 border-2 border-black px-3 py-1.5 font-semibold shadow-[3px_3px_0px_#000] transition-all duration-150 hover:scale-110 hover:bg-black hover:text-white hover:shadow-none dark:border-zinc-800 dark:shadow-zinc-900 dark:hover:bg-zinc-900"
