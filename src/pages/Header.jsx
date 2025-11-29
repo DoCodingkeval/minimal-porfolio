@@ -25,8 +25,10 @@ const Header = () => {
 
         if (theme === 'dark') {
             document.documentElement.classList.add('dark');
+            setIcon('dark');
         } else {
             document.documentElement.classList.remove('dark');
+            setIcon('light');
         }
     });
 
@@ -55,10 +57,10 @@ const Header = () => {
                     KG
                     <span className="font-birth ml-3 text-3xl font-medium">Keval</span>
                 </a>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-3">
                     <button
                         onClick={handleThemeChange}
-                        className="grid size-11 cursor-pointer place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800"
+                        className=" grid size-10 cursor-pointer place-items-center rounded-full transition duration-300 hover:bg-neutral-200 hover:dark:bg-zinc-800 relative before:absolute before:content-['Toggle_Theme'] before:-left-[272%] before:bg-neutral-800 before:text-white before:whitespace-nowrap before:px-2 before:py-1.5 before:text-xs before:z-10 before:rounded after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:rounded-xs after:rotate-45 after:-left-4 after:size-3 after:bg-neutral-800 before:invisible before:opacity-0 after:opacity-0 after:invisible hover:before:opacity-100 hover:before:visible hover:after:visible hover:after:opacity-100"
                     >
                         {icon === 'dark' ? (
                             <IconMoonStars className="size-5" />

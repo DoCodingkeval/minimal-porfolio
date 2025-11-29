@@ -16,7 +16,7 @@ const Project = () => {
         <h1 className="text-center text-3xl text-black lg:text-4xl dark:text-[#f9fafb]">
           My <span className="font-extrabold">Projects</span>
         </h1>
-        <div className="grid text-black md:grid-cols-2 dark:text-neutral-300 mt-10">
+        <div className="grid text-black sm:grid-cols-2 dark:text-neutral-300 mt-10">
           {projects.map((project) => (
             <Card key={project.id}>
               <Lens>

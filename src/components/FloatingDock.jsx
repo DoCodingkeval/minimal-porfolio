@@ -26,7 +26,7 @@ const FloatingDock = () => {
   };
 
   return (
-    <nav className="fixed inset-x-0 bottom-4 z-50 mx-auto max-w-max rounded-full border border-neutral-300 bg-white py-2 px-3 text-xs shadow dark:border-zinc-800 dark:bg-zinc-900">
+    <nav className="fixed inset-x-0 bottom-4 z-50 mx-auto max-w-max rounded-full border border-neutral-300 bg-white py-2 px-2 text-xs shadow dark:border-zinc-800 dark:bg-zinc-900">
       <div className="flex items-center justify-center">
         <motion.ul
           variants={ulVariants}
@@ -46,7 +46,7 @@ const FloatingDock = () => {
               >
                 {links.icon}
               </a>
-              <span className="absolute -top-9 left-1/2 -translate-x-1/2 rounded-lg bg-zinc-700 px-3 py-1 text-white capitalize opacity-0 transition delay-200 duration-500 group-hover:opacity-100 dark:bg-neutral-200 dark:text-black">
+              <span className="absolute -top-9 left-1/2 -translate-x-1/2 rounded-lg bg-zinc-700 px-3 py-1 text-white capitalize opacity-0 transition-all group-hover:opacity-100 dark:bg-neutral-200 dark:text-black">
                 {links.name}
               </span>
             </motion.li>

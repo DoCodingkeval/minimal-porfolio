@@ -13,7 +13,7 @@ function App() {
   return (
     <>
         <Header />
-      <main className="mx-auto overflow-hidden border-[#EBEBED] px-5 md:max-w-3xl lg:border-r lg:border-l xl:max-w-5xl dark:border-zinc-800 selection:bg-black selection:text-gray">
+      <main className="mx-auto overflow-hidden border-[#EBEBED] px-5 md:max-w-3xl lg:border-r lg:border-l xl:max-w-5xl dark:border-zinc-800 selection:bg-black selection:text-gray dark:selection:bg-neutral-800 dark:selection:text-neutral-300">
         <FloatingDock />
         <Hero />
         <Skill />

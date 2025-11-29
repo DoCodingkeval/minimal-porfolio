@@ -22,14 +22,14 @@ const Hero = () => {
             className="relative w-full"
             id="hero"
         >
-            <div className="grid lg:grid-cols-2">
+            <div className="grid md:grid-cols-2 mt-10">
                 <motion.div
                     initial={{ x: -50, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.7, delay: 0.5 }}
                     className="mt-5 lg:mt-0"
                 >
-                    <div className="text-2xl leading-8 sm:text-3xl lg:text-2xl xl:text-3xl sm:leading-10 xl:leading-13 ">
+                    <div className="max-[400px]:text-xl text-2xl leading-8 sm:text-3xl lg:text-2xl xl:text-3xl sm:leading-10 xl:leading-13 ">
                         <h1 className="whitespace-nowrap">
                             Hello, <span ref={el} className="font-semibold"></span>
                         </h1>
@@ -62,7 +62,7 @@ const Hero = () => {
                         ))}
                     </div>
                 </motion.div>
-                <div className='w-full max-lg:-order-1 max-md:pt-10'>
+                <div className='w-full max-md:pt-10 -order-1 md:order-0'>
                     <motion.img
                         initial={{ x: 50, opacity: 0 }}
                         animate={{ x: 0, opacity: 1 }}
