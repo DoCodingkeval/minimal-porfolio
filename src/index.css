@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/BricolageGrotesque-Regular-BF648bd57899c78.ttf");
+}
+
+@theme inline {
+  --font-sora: 'Sora', sans-serif;
+  --font-alfa: 'Alfa Slab One', serif;
+  --font-birth: 'Birthstone', cursive;
+  --color-gray: #52525b;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  transition: all 0.2s ease;
+}
+
+body {
+  font-family: "Bricolage Grotesque";
+  line-height: 1.5;
+}
+
+img{
+    user-select: none;
+}
+button, a{
+    font-family: inherit;
+}
+section{
+    padding-block: 5rem;
+}
+
+h1{
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+}
+
+.role,
+.heading{
+  position: relative;
+  color: white;
+  --width: 0%
+}
+
+.role::before,
+.heading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--width);
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transition: width 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.heading::before{
+  transform: rotate(-2deg);
+}
+
+.text-stroke {
+  -webkit-text-stroke: .1px black;
+}
+
+html.dark {
+  background-color: #08090a;
+  color: #f9fafb;
+}
+
+html.dark .text-stroke {
+  -webkit-text-stroke: 1px white;
+}
+@media (max-width: 480px){
+    section{
+        padding-block: 3rem;
+    }
+}
